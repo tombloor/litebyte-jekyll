@@ -1,0 +1,23 @@
+.hidden {
+    visibility: hidden;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home header {
+    min-height: 35vh;
+}.home header h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.home nav .card {
+    height: 100%;
+    min-height: 128px;
+    top:20px;
+}
