@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="6.6"
+     inkscape:cx="49.924242"
+     inkscape:cy="56.136364"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#333333;stroke:none;stroke-width:0.265112"
+       id="rect882"
+       width="26.458334"
+       height="26.458332"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.5493px;line-height:1.25;font-family:'Source Code Variable';-inkscape-font-specification:'Source Code Variable';text-align:center;text-anchor:middle;fill:#b3b3b3;stroke-width:0.264584"
+       x="13.677432"
+       y="25.095026"
+       id="text2638"
+       transform="scale(1.0362998,0.96497168)"><tspan
+         sodipodi:role="line"
+         id="tspan2636"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Code Variable';-inkscape-font-specification:'Source Code Variable Bold';fill:#b3b3b3;stroke-width:0.264584"
+         x="13.677432"
+         y="25.095026">&gt;</tspan></text>
+  </g>
+</svg>
