@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name='build' content="{{ site.time | to_utc | date:"%-d %b %Y %T %Z" }}">
         {% seo %}
         <link rel="icon" type="image/svg+xml" href="/assets/img/site/icon.svg">
         <link rel='stylesheet' href='/assets/css/bootstrap.css'>
@@ -15,5 +16,8 @@
     </head>
     <body>
         {{ content }}
+        <footer class='fixed-bottom p-2'>
+            <small class='text-muted'>Build: {{ site.time | to_utc | date:"%-d %b, %Y %T %Z" }}</small>
+        </footer>
     </body>
 </html>
