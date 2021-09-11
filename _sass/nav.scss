@@ -1,0 +1,51 @@
+$sidebar-width: 250px;
+$nav-background: rgb(102, 0, 153);
+$nav-color: white;
+
+/* #region top-nav */
+#top-nav {
+    background-color: $nav-background;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px;
+}
+
+#top-nav .navbar-toggler {
+    color: $nav-color;
+    border-color: rgba($nav-color, .7);
+}
+
+#top-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+/* #endregion */
+/* #region side-nav */
+#side-nav {
+    min-height: 100vh;
+    min-width: $sidebar-width;
+    text-align: center;
+    color: $nav-color;
+    background-color: $nav-background;
+    box-shadow: 2px 0 5px;
+}
+
+#side-nav .navbar-brand {
+    margin: 0 0 1rem 0;
+    font-size: 2em;
+}
+
+#side-nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    height: 100vh;
+    width: $sidebar-width;
+    padding: 1rem;
+}
+
+#side-nav .nav-item {
+    text-align: center;
+}
+/* #endregion */
