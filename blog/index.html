@@ -3,10 +3,11 @@ layout: blog
 title: Blog
 ---
 
-<h1>Placeholder - Posts</h1>
+<h1>Latest Posts</h1>
 
 <div>
     {% for post in site.posts %}
-    {{ post }}
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}">Read More</a>
     {% endfor %}
 </div>
