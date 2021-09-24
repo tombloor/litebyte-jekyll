@@ -22,11 +22,12 @@ layout: default
 <div id='wrapper'>
     <nav id='side-nav' class='d-none d-md-block navbar-dark'>
         <div id='side-nav-content'>
-            <a class="navbar-brand" href="{% link index.html %}">
-                {{ site.title }}</br>
-                Blog
-            </a>
-            <p class=navbar-description>{{ site.description }}</p>
+            <div id='side-nav-header'>
+                <a class="navbar-brand" href="{% link index.html %}">
+                    {{ site.title }}
+                </a>
+                <p class=navbar-description>{{ site.description }}</p>
+            </div>
             <ul class='navbar-nav flex-fill'>
                 {% for item in site.navigation %}
                     <li class='nav-item {% if page.url == item.href %}active{% endif %}'>

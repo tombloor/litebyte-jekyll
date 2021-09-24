@@ -42,10 +42,23 @@ $nav-color: white;
     position: fixed;
     height: 100vh;
     width: $sidebar-width;
+}
+
+#side-nav-header {
+    padding: 2rem 1rem;
+    background-color: darken($nav-background, 4);
+}
+
+#side-nav-content .navbar-nav {
     padding: 1rem;
 }
 
 #side-nav .nav-item {
     text-align: center;
+}
+
+#side-nav .nav-item a {
+    color: white;
+    font-weight: bold;
 }
 /* #endregion */
