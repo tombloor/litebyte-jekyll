@@ -1,5 +1,6 @@
 @import "monokai-highlight";
 
+/* Highlighter */
 .highlight pre {
     color: #f8f8f2;
     margin: 0;
@@ -11,7 +12,24 @@
     border-color: #f8f8f2;
 }
 
+figure.highlight > pre > code::before {
+    content: attr(data-lang);
+    display: block;
+    background-color: #333;
+    padding: 0 20px;
+}
+
 /* Post List */
 .post-summary {
     margin: 1rem 0;
+}
+
+/* Post Page */
+.post-title {
+    margin-bottom: 3rem;
+}
+
+.post-title h1 {
+    padding: 0;
+    margin: 0;
 }
