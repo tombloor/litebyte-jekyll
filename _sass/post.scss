@@ -20,8 +20,17 @@ figure.highlight > pre > code::before {
 }
 
 /* Post List */
+.post-list h1 {
+    margin-bottom: 3rem;
+}
+
 .post-summary {
-    margin: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.post-summary .post-title {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Post Page */

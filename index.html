@@ -3,15 +3,14 @@ layout: blog
 title: Blog
 ---
 
-<h1>Latest Posts</h1>
-
 <div class='post-list'>
+    <h1>Latest Posts</h1>
     {% for post in site.posts %}
         <div class='post-summary'>
             <a class='post-title' href='{{ post.url }}'>
                 <h3>{{ post.title }}</h3>
             </a>
-            <small class='post-date'>{{ post.date }}</small>
+            <small class='post-date'>{{ post.date|to_utc }}</small>
             <p class='post-excerpt'>{{ post.excerpt }}</p>
             <a class='read-more-link' href="{{ post.url }}">Read More</a>
         </div>
