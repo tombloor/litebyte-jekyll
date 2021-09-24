@@ -1,5 +1,5 @@
 ---
 name: 'Categories'
-href: '{% link blog/categories.html %}'
+href: '{% link categories.html %}'
 order: 1
 ---

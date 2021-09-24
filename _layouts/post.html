@@ -1,5 +1,9 @@
 ---
-layout: default
+layout: blog
 ---
 
-<p>{{content}}</p>
+<div class='post'>
+    <h1 class='post-title'>{{ page.title }}</h1>
+    <small class='post-date'>{{ page.date }}</small>
+    <p>{{content}}</p>
+</div>

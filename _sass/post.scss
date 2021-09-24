@@ -1,4 +1,3 @@
-@import "main";
 @import "monokai-highlight";
 
 .highlight pre {
@@ -10,4 +9,9 @@
 .highlight td.gutter {
     border-right-width: 1px;
     border-color: #f8f8f2;
+}
+
+/* Post List */
+.post-summary {
+    margin: 1rem 0;
 }

@@ -1,5 +1,5 @@
 ---
 name: 'Home'
-href: '{% link blog/index.html %}'
+href: '{% link index.html %}'
 order: 0
 ---
