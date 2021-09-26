@@ -1,104 +1,18 @@
 ---
-layout: default
-title: Home
+layout: blog
+title: Blog
 ---
 
-<div class='home'>
-    <div class='container-fluid'>
-        <header class='row text-center bg-dark text-light py-4'>
-            <h1 class='terminal-type font-weight-bold'>{{ site.title }}</h1>
-            <div class='site-description fade px-4'>
-                <h4>{{ site.description }}</p>
-                <!-- <p>Use the links below to go to the various sections of the site</p> -->
-                <h4>There's nothing here yet, but I'll be working on it 'soon'.</p>
-                <h5><i>Time is relative</i></p>
-            </div>
-        </header>
-    </div>
-    <div class='container mt-4'>
-        <nav class='row row-cols-1 row-cols-md-3 g-4'>
-            <div class='col'>
-                <div class='card fade'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>About me</h5>
-                        <!--<p class='card-text'>
-                            Want to learn a little more about me? Click here to see a web based resume</p>
-                        <a href='{% link about.html %}' class='stretched-link'>Read More</a> -->
-                        <a href='#' class='stretched-link'>Coming Soon...</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col'>
-                <div class='card fade'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Blog</h5>
-                        <p class='card-text'>
-                            Whatever I feel like writing about. 
-                            Primarily programming and gaming related content.
-                        </p>
-                        <a href='{% link blog/index.html %}' class='stretched-link'>Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col'>
-                <div class='card fade'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Projects</h5>
-                        <!--<p class="card-text">
-                            Information on personal projects I'm working on or have completed.
-                            Feedback and constructive critique is always appreciated.
-                        </p>
-                        <a href='{% link projects/index.html %}' class='stretched-link'>Read More</a>-->
-                        <a href='#' class='stretched-link'>Coming Soon...</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </nav>
-    </div>
+<div class='post-list'>
+    <h1>Latest Posts</h1>
+    {% for post in site.posts %}
+        <div class='post-summary'>
+            <a class='post-title' href='{{ post.url }}'>
+                <h3>{{ post.title }}</h3>
+            </a>
+            <small class='post-date'>{{ post.date|to_utc }}</small>
+            <p class='post-excerpt'>{{ post.excerpt }}</p>
+            <a class='read-more-link' href="{{ post.url }}">Read More</a>
+        </div>
+    {% endfor %}
 </div>
-<script type='text/javascript'>
-function finish_typing() {
-    $('.site-description').addClass('show');
-
-    $('.card.fade').each(function(i, card) {
-        let delay = 150;
-        setTimeout(function(){
-            $(card).animate({'top': '0px'}, 500);
-            $(card).addClass('show');
-        }, delay * i);
-    });
-}
-
-function type_letters(span, str, pos, min_delay, max_delay) {
-    span.text(str.substring(0, pos));
-    if (span.text() != str) {
-        let delay = min_delay + (Math.random() * (max_delay - min_delay));
-        setTimeout(function() { 
-            type_letters(span, str, pos + 1, min_delay, max_delay); 
-        }, delay);
-    } else {
-        setTimeout(function() {
-            finish_typing();
-        }, 1000);
-    }
-}
-
-$(function(){
-    $('.terminal-type').each(function(i, el) {
-        let str = $(this).text();
-        $(this).text('');
-        
-        let prompt = $('<span>').html('> ').appendTo($(this));
-        let text = $('<span>').appendTo($(this));
-        let cursor = $('<span>').html('_').addClass('hidden cursor').appendTo($(this));
-        setInterval(function(){ 
-            cursor.toggleClass('hidden'); 
-        }, 750)
-
-        setTimeout(function() { 
-            type_letters(text, str, 1, 75, 500); 
-        }, 1000);
-    });
-});
-</script>

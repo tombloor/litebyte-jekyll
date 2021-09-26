@@ -1,0 +1,44 @@
+@import "monokai-highlight";
+
+/* Highlighter */
+.highlight pre {
+    color: #f8f8f2;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.highlight td.gutter {
+    border-right-width: 1px;
+    border-color: #f8f8f2;
+}
+
+figure.highlight > pre > code::before {
+    content: attr(data-lang);
+    display: block;
+    background-color: #333;
+    padding: 0 20px;
+}
+
+/* Post List */
+.post-list h1 {
+    margin-bottom: 3rem;
+}
+
+.post-summary {
+    margin-bottom: 3rem;
+}
+
+.post-summary .post-title {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Post Page */
+.post-title {
+    margin-bottom: 3rem;
+}
+
+.post-title h1 {
+    padding: 0;
+    margin: 0;
+}
