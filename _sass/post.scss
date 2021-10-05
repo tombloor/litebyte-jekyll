@@ -12,11 +12,21 @@
     border-color: #f8f8f2;
 }
 
+figure.highlight > pre {
+    border-radius: 7px;
+}
+
 figure.highlight > pre > code::before {
     content: attr(data-lang);
-    display: block;
     background-color: #333;
-    padding: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    float: right;
+    margin: 5px;
+}
+figure.highlight > pre > code.language-python::before {
+    background-color: rgb(192, 125, 0);
+
 }
 
 /* Post List */
