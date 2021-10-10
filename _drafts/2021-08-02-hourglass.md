@@ -15,19 +15,6 @@ but I wanted to ease into these write ups, so this was a good place to start.
 
 <!--more-->
 
-## Preamble
-
-I've recently been trying to dedicate some time each week working on programming challenges or personal projects.
-Finding time to program outside of work can sometimes be a challenge, but I've found it refreshing to be able to sit
-down for 20-30 minutes and write some code unrelated to my job. It's definitely something I want to try to do more 
-often.
-
-After I'd worked through a couple of these problems, I felt it would be a good to write them up as full walkthroughs.
-At the time of writing this post I have been working professionally as a developer for around 8 years, and I can 
-honestly say I've never experienced anything like many of these challenges in a real-world scenario. However they are 
-still fun and interesting to work through, and they often lead to exploring new ideas and techniques that I may not be
-exposed otherwise.
-
 [Click Here](https://www.hackerrank.com/challenges/2d-array/problem) to go to the problem to see it for yourself
 
 ## The Solution
