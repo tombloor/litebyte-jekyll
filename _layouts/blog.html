@@ -20,28 +20,13 @@ layout: default
 </nav>
 
 <div id='wrapper'>
-    <nav id='side-nav' class='d-none d-md-block navbar-dark'>
-        <div id='side-nav-content'>
-            <div id='side-nav-header'>
-                <a class="navbar-brand" href="{% link index.html %}">
-                    {{ site.title }}
-                </a>
-                <p class=navbar-description>{{ site.description }}</p>
-            </div>
-            <ul class='navbar-nav flex-fill'>
-                {% for item in site.navigation %}
-                    <li class='nav-item {% if page.url == item.href %}active{% endif %}'>
-                        <a class='nav-link' href="{{item.href}}">{{item.name}}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </nav>
-    <div class='container'>
-        <div id='page' class='my-md-4'>
+    {% include sidenav.html %}
+    <div class='container d-flex flex-column align-items-between'>
+        <div id='page' class='mt-md-4'>
             <div class='col'>
                 {{ content }}
             </div>
         </div>
+        {% include footer.html %}
     </div>
 </div>

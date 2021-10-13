@@ -13,3 +13,16 @@ h3 {
     display: flex;
     width: 100%;
 }
+
+#wrapper > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
