@@ -69,3 +69,9 @@ ol > li > p:first-child {
 div.highlighter-rouge {
     margin-bottom: 1rem;
 }
+
+blockquote {
+    border-left: 0.25rem solid #999;
+    background-color: #eee;
+    padding: 1rem;
+}
