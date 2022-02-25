@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Daily Coding Problem #2"
-date:   2022-02-23 18:00:00 -0500
+date:   2022-02-24 18:00:00 -0500
 categories: Programming Problems
 tags: Python Series
 excerpt_separator: <!--more-->
