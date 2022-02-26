@@ -5,14 +5,20 @@ title: Blog
 
 <div class='post-list'>
     <h1>Latest Posts</h1>
-    {% for post in site.posts %}
-        <div class='post-summary'>
-            <a class='post-title' href='{{ post.url }}'>
-                <h3>{{ post.title }}</h3>
-            </a>
-            <small class='post-date'>{{ post.date|to_utc }}</small>
-            <p class='post-excerpt'>{{ post.excerpt }}</p>
-            <a class='read-more-link' href="{{ post.url }}">Read More</a>
-        </div>
-    {% endfor %}
+    <div class="post-columns">
+        {% for post in site.posts %}
+            <div class='post-summary card'>
+                <div class="card-body">
+                    <a class='post-title' href='{{ post.url }}'>
+                        <h3>{{ post.title }}</h3>
+                    </a>
+                    <small class='post-date'>{{ post.date|to_utc }}</small>
+                    <p class='post-excerpt'>{{ post.excerpt }}</p>
+                </div>
+                <div class="card-body d-flex align-items-end">
+                    <a class='read-more-link btn btn-primary' href="{{ post.url }}">Read More</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
